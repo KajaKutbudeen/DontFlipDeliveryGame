@@ -762,7 +762,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   kmh: 0
-  speedLimit: 50
+  speedLimit: 90
   distanceFromObjects: 2
   recklessnessThreshold: 0
   despawnForFlippingOver: 1

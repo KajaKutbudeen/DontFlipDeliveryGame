@@ -12,12 +12,20 @@ public class MenuManager : MonoBehaviour
 
     [Header("Enable")]
     public GameObject[] gameObjects;
+    public GameObject[] menuItems;
+    public SimpleCarMovement _sm;
 
     [Header("Player Failed")]
     public GameObject FailedUI;
-    public void StartButton()
+    public GameObject TutUi;
+
+    private void Start()
     {
-        VirtualCamera.enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+    }
+    public void StartButton()
+    {       
+       VirtualCamera.enabled = false;
         Menu.SetActive(false);
 
         // _sm.IsInput = true;
@@ -28,6 +36,16 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void GameStartButton()
+    {
+       
+        foreach (GameObject go in menuItems)
+        {
+            go.SetActive(true) ;
+        }      
+        _sm.IsInput = true;
+        TutUi.SetActive(false);
+    }
     public void GameFailed()
     {
         FailedUI.SetActive(true);

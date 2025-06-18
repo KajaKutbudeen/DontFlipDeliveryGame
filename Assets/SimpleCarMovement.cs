@@ -13,7 +13,7 @@ public class SimpleCarMovement : MonoBehaviour
   
     public LayerMask grd;
     public int _rpm;
-    public bool IsInput = true;
+    public bool IsInput = false;
     private Rigidbody _rb;
     public float maxdist = 0;
 
@@ -48,8 +48,7 @@ public class SimpleCarMovement : MonoBehaviour
 
     private void Start()
     {
-        Application.targetFrameRate = 60;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Application.targetFrameRate = 60;       
         _rb = GetComponent<Rigidbody>();
         
     }

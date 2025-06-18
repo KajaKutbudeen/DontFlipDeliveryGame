@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 761086370698091285}
   - component: {fileID: 2842996481557863676}
   - component: {fileID: 891274702903277818}
+  - component: {fileID: 1827641463916823562}
   - component: {fileID: 5742830615212572232}
   m_Layer: 0
   m_Name: Player
@@ -422,6 +423,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1038992, y: 1.3117272, z: 5.315179}
   m_Center: {x: 0.029525824, y: 1.5068208, z: 0.03083971}
+--- !u!114 &1827641463916823562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761086370700104583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575dbf1b86946e84ab441c6041a009e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelL: {fileID: 5608476830023685719}
+  WheelR: {fileID: 664505165155597561}
+  AntiRoll: 5000
 --- !u!114 &5742830615212572232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +450,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a13556554d8c5d49a6ed7f5c9bb9174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  point: {fileID: 0}
+  timeremaning: 10
+  FailedUI: {fileID: 0}
+  grd:
+    serializedVersion: 2
+    m_Bits: 0
+  _rpm: 0
+  IsInput: 1
+  maxdist: 0
   horizontal_Input: 0
   vertical_Input: 0
   Carspeed: 1000
@@ -447,6 +472,7 @@ MonoBehaviour:
   Frontright: {fileID: 761086370700384185}
   rearleft: {fileID: 761086370700343593}
   rearright: {fileID: 761086370700374165}
+  _kpmno: {fileID: 0}
 --- !u!1 &761086370700108731
 GameObject:
   m_ObjectHideFlags: 0
