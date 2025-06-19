@@ -1,11 +1,36 @@
-### Images ###
+# Created by https://www.toptal.com/developers/gitignore/api/images,unity
+# Edit at https://www.toptal.com/developers/gitignore?templates=images,unity
 
+### Images ###
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+*.jif
+*.jfif
+*.jfi
+
+# JPEG 2000
+*.jp2
+*.j2k
+*.jpf
+*.jpx
+*.jpm
+*.mj2
+
+# JPEG XR
+*.jxr
+*.hdp
+*.wdp
 
 # Graphics Interchange Format
 *.gif
 
 # RAW
 *.raw
+
+# Web P
+*.webp
 
 # Portable Network Graphics
 *.png
@@ -41,10 +66,10 @@
 *.3dm
 *.max
 
+### Unity ###
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
-#
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -113,3 +138,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# End of https://www.toptal.com/developers/gitignore/api/images,unity
